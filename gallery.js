@@ -5,10 +5,8 @@ function upDate(previewPic) {
     
     let displayDiv = document.getElementById("image");
     
-    // Changing the background image
     displayDiv.style.backgroundImage = "url('" + previewPic.src + "')";
     
-    // Changing the text
     displayDiv.innerHTML = previewPic.alt;
 }
 
@@ -17,7 +15,6 @@ function unDo() {
     
     let displayDiv = document.getElementById("image");
     
-    // Resetting background and text
     displayDiv.style.backgroundImage = "url('')";
     displayDiv.innerHTML = "Hover over an image below to display here.";
 }
@@ -33,7 +30,6 @@ function addTabFocus() {
     }
 }
 
-// Ensure the onload function is assigned correctly
 window.onload = function() {
     addTabFocus();
 };
